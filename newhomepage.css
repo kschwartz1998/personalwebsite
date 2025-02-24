@@ -1,0 +1,142 @@
+body{
+    height:800px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    overflow:hidden;
+ 
+}
+
+header{
+    position: absolute;
+    top: -60px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.7em;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    width: 1000px;
+}
+p{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6em;
+    position: absolute;
+    width: 600px;
+    top:80px;
+    padding-left: 4px;
+}
+
+.imagerow{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.house1{
+    position: relative;
+    left:-100px;
+    top: 20px;
+}
+.house2{
+    position: relative;
+    left: -185px;
+    top: 40px;
+}
+.house3{
+    position: relative;
+    left: -258px;
+    top:95px;
+}
+.myhouse{
+    position:relative;
+    left:-325px;
+    top: 85px;
+}
+.house5{
+    position:relative;
+    left:-385px;
+    top: 70px;
+}
+
+.traincar{
+    position:absolute;
+    top:530px;
+    animation: move 9s infinite ease-in-out;
+    height:210px;
+}
+@keyframes move {
+    from{
+transform: translateX(1500px);
+    }
+    to{
+transform: translateX(-2000px)
+    }
+}
+
+.waymo{
+    position: absolute;
+    top:570px;
+    animation: move 7s infinite ease-in-out;
+}
+@keyframes Waymo {
+    from{
+    transform: translateX(0px);
+    }
+    to{
+    transform: translateX(1500px)
+    }
+}
+
+.bus{
+    position: absolute;
+    top:520px;
+    animation: move 10s infinite linear;
+}
+@keyframes bus {
+    from{
+    transform: translateX(0px);
+    }
+    to{
+    transform: translateX(1500px)
+    }
+}
+
+.daryl{
+    position: absolute;
+    top: 590px;
+    animation: move 8.2s infinite linear;
+}
+
+@keyframes daryl {
+    from{
+    transform: translateX(10px);
+    }
+    to{
+    transform: translateX(1500px)
+    }
+}
+
+
+.arrow{
+    position: relative;
+    left:-1000px;
+    top:-380px;
+}
+.arrow{
+    -webkit-animation:"shake" 1s ease-in-out
+    .1s infinite alternate;
+}
+@-webkit-keyframes shake {
+    from{
+        -webkit-transform:rotate(15deg);
+    }
+    to{-webkit-transform-origin:(-15deg);
+        -webkit-transform-origin: center
+        center;
+    }
+}
