@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.cpbox{
+    height: 750px;
+    width:1405px;
+    background-color: #6b1f0e;
+}
+@media screen and (max-width:600px) {
+    .cpbox {
+        height: 800px;
+        width:1405px;
+        background-color: #6b1f0e;
+    }
+}
+.cpbox2{
+    height: 418px;
+    width: 840px;
+    background-color: #3e4e8b;
+    position:absolute;
+    left: 0;
+    bottom: 50px;
+    display: flex;
+}
+@media screen and (max-width:600px) {
+    .cpbox2 {
+        height: 410px;
+        left: 0;
+        bottom: 40px;
+    }
+}
+
+.telephone{
+    position:absolute;
+    bottom: -190px;
+    right: -385px;
+    height:707px;
+   
+}
+@media screen and (max-width:600px) {
+    .telephone {
+        bottom: -103px;
+        right: 493px;
+        height:530px;
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    position: absolute;
+    top: 55px;
+    left: 75px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0em;
+}
+@media screen and (max-width:600px) {
+    form {
+        font-size: 1.7rem;
+        padding-left: -10px;
+        top: -330px;
+        left: 35px;
+        font-size: 1.0em;
+        width: 250px;
+    }
+}
+input,textarea {
+    width:100%;
+    background: transparent;
+    padding: 8px;
+    outline: #6b1f0e;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0em;
+}
+input:focus
+textarea:focus {
+    outline: none;
+    border-color:#7b5965;
+}
+button{
+    margin-left:auto;
+    padding: 18px 40px;
+    background-color: #6b1f0e;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0em;
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    button {
+        margin-left: 20px;
+    }
+}
+input,
+textarea,
+button {
+    border-radius: 5px;
+    border: 6px solid black;
+
+}
+button:hover{
+    color:#6b1f0e;
+    background-color: #3e4e8b;
+}
