@@ -131,7 +131,7 @@ button{
 @media screen and (max-width:600px) {
     button {
         margin-left: 54px;
-        bottom:-120.5px;
+        bottom:-119px;
         position: absolute;
         width:72px;
         height:72px;
