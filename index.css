@@ -20,6 +20,13 @@ header{
     flex-grow: 1;
     width: 1000px;
 }
+@media screen and (max-width:600px) {
+    header {
+        font-size: 1.1rem;
+        top:-10px;
+        padding-left: -5px;
+    }
+}
 p{
     font-family: "Poppins", serif;
     font-weight: 600;
@@ -29,6 +36,14 @@ p{
     width: 600px;
     top:80px;
     padding-left: 4px;
+}
+@media screen and (max-width:600px) {
+    p {
+        font-size: 1.2rem;
+        width: 340px;
+        top: 50px;
+      
+    }
 }
 
 .imagerow{
@@ -41,6 +56,11 @@ p{
     position: relative;
     left:-100px;
     top: 20px;
+}
+@media screen and (max-width:600px) {
+    .house1, .house2, .house3, .house5 {
+        display: none;
+    }
 }
 .house2{
     position: relative;
@@ -56,6 +76,13 @@ p{
     position:relative;
     left:-325px;
     top: 85px;
+}
+@media screen and (max-width:600px) {
+    .myhouse {
+        left: 20px;
+        height: 470px;
+        top: 65px;
+    }
 }
 .house5{
     position:relative;
@@ -77,6 +104,13 @@ transform: translateX(1500px);
 transform: translateX(-2000px)
     }
 }
+@media screen and (max-width:600px) {
+    .traincar {
+        height: 190px;
+        top: 510px;
+      
+    }
+}
 
 .waymo{
     position: absolute;
@@ -91,7 +125,14 @@ transform: translateX(-2000px)
     transform: translateX(1500px)
     }
 }
-
+@media screen and (max-width:600px) {
+    .waymo {
+        height: 160px;
+        top: 540px;
+      
+    }
+    
+}
 .bus{
     position: absolute;
     top:520px;
@@ -105,6 +146,13 @@ transform: translateX(-2000px)
     transform: translateX(1500px)
     }
 }
+@media screen and (max-width:600px) {
+    .bus {
+        height: 260px;
+        top: 490px;
+         }
+}
+
 
 .daryl{
     position: absolute;
@@ -119,6 +167,12 @@ transform: translateX(-2000px)
     to{
     transform: translateX(1500px)
     }
+}
+@media screen and (max-width:600px) {
+    .daryl {
+        height: 160px;
+        top: 550px;
+         }
 }
 
 
@@ -138,5 +192,13 @@ transform: translateX(-2000px)
     to{-webkit-transform-origin:(-15deg);
         -webkit-transform-origin: center
         center;
+    }
+}
+@media screen and (max-width:600px) {
+    .arrow {
+        height: 70px;
+       left:-190px;
+       top: -340px;
+      
     }
 }
