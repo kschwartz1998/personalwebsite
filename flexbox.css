@@ -1,3 +1,12 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
 body{
     height:100%;
     display:flex;
@@ -7,12 +16,10 @@ body{
     width: 100%;
 }
 @media screen and (max-width:600px) {
-    .body {
+    html, body {
     width: 100%;
-    height:100%
-   
-  
-    }
+    overflow: hidden;
+   }
 }
 
 .container{
@@ -28,17 +35,18 @@ body{
     .container {
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 110px;
+    align-items: center;
+    margin-top: 50px;
     height: 100%;
     width: 100%;
-   
-  
+    padding: none;
+    margin-left: none;
     }
 }
 
 header{
     position: absolute;
-    top: -60px;
+    top: -10px;
     font-family: "Poppins", serif;
     font-weight: 700;
     font-style: normal;
@@ -46,6 +54,29 @@ header{
     flex-wrap: nowrap;
     flex-grow: 1;
     width: 1000px;
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-left: 40px;
+        margin-top: 5px;
+        top:0px;
+        position: relative; 
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        font-size: 1.8rem;
+        padding-left: 0px;
+        top:0px;
+    }
 }
 
 
@@ -78,6 +109,13 @@ header{
     width:10%;
     height: 90%;
 }
+@media screen and (max-width:600px) {
+    .rlink {
+        writing-mode:horizontal-tb;
+        margin-right: 20px;
+        font-weight: 510;
+   }
+}
 
 
 .plink{
@@ -109,6 +147,21 @@ header{
     height: 93%;
 }
 
+@media screen and (max-width:600px) {
+    .plink {
+      writing-mode: horizontal-tb;
+      font-size: 2.5rem;
+      font-weight: 510;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: inline-block;
+      letter-spacing: 10px;
+    }
+  }
+
+
+
 .alink{
     color: #9f3c27;
     position: absolute;
@@ -139,6 +192,15 @@ header{
     height: 90%;
 }
 
+@media screen and (max-width:600px) {
+    .alink {
+        writing-mode:horizontal-tb;
+        margin-right: 45px;
+        font-weight: 510;
+   }
+}
+
+
 .clink{
     color:#3e4e8b;
     position: absolute;
@@ -168,6 +230,33 @@ header{
     width:10%;
     height: 92%;
 }
+@media screen and (max-width:600px) {
+    .clink {
+        writing-mode:horizontal-tb;
+        margin-right: -8px;
+        font-weight: 520;
+        bottom: 230px;
+   }
+}
+
+@media screen and (max-width:600px) {
+   .rlink, .plink, .alink, .clink {
+    margin-top: 10px;
+   }
+}
+
+@media screen and (max-width:600px) {
+    .rlink::after,
+    .plink::after,
+    .alink::after,
+    .clink::after {
+      content: none;
+    }
+  }
+
+
+
+
 
 
 
@@ -182,6 +271,12 @@ header{
     flex-grow: 1;
    
 }
+@media screen and (max-width:600px) {
+    .box1 {
+    width: 100vw;
+    height:150px;
+   }
+}
 
 
 
@@ -195,6 +290,15 @@ header{
     align-self:flex-end;
     flex-grow: 1;
 }
+@media screen and (max-width:600px) {
+    .box2 {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+}
 
 
 .box3{
@@ -206,6 +310,12 @@ header{
     justify-content: right;
     align-self:flex-end;
     flex-grow: 1;
+}
+@media screen and (max-width:600px) {
+    .box3 {
+    width: 100vw;
+    height: 150px;
+   }
 }
 
 
@@ -220,3 +330,29 @@ header{
     align-self:flex-end;
     flex-grow: 1;
 }
+@media screen and (max-width:600px) {
+    .box4 {
+    width: 100vw;
+    height:150px;
+   }
+}
+
+
+@media screen and (max-width:600px) {
+    .box1, .box2, .box3, .box4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+  
+    .rlink, .plink, .alink, .clink {
+      position: static;
+      writing-mode: horizontal-tb;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 2.5rem; /* You can tweak this if needed */
+    }
+  }
+  
