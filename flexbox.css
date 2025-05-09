@@ -253,14 +253,16 @@ header{
     width:10%;
     height: 92%;
 }
-@media screen and (max-width:600px) {
-    .clink {
-        writing-mode:horizontal-tb;
-        margin-right: -8px;
-        font-weight: 520;
-        bottom: 230px;
-   }
-}
+
+ @media screen and (max-width:600px) {
+            .clink {
+              writing-mode: horizontal-tb;
+              margin-right: -8px;
+              font-weight: 520;
+              bottom: auto;        
+              position: static;    
+            }
+          }
 
 @media screen and (max-width:600px) {
    .rlink, .plink, .alink, .clink {
