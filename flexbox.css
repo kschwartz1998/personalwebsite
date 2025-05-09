@@ -4,7 +4,30 @@
     box-sizing: border-box;
 }
 
+.center-box{
+    display: none;
+}
 
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .center-box {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #FAE7CD;
+      padding: 20px 40px;
+      z-index: 10;
+    }
+  
+    .center-box h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+    }
+  }
 
 
 body{
@@ -338,21 +361,68 @@ header{
 }
 
 
-@media screen and (max-width:600px) {
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .layout-wrapper {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    header {
+      display: none;
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      grid-template-rows: 50vh 50vh;
+      width: 100%;
+      height: 100%;
+    }
+  
     .box1, .box2, .box3, .box4 {
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .center-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #FAE7CD;
+      padding: 20px 40px;
+      z-index: 10;
+    }
+  
+    .center-box h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
     }
   
     .rlink, .plink, .alink, .clink {
-      position: static;
       writing-mode: horizontal-tb;
-      margin: 0;
-      padding: 0;
+      font-size: 1.8rem;
+      position: static;
+      letter-spacing: 5px;
       text-align: center;
-      font-size: 2.5rem; /* You can tweak this if needed */
+    }
+  
+    .rlink::after,
+    .plink::after,
+    .alink::after,
+    .clink::after {
+      content: none;
+      display: none;
     }
   }
-  
