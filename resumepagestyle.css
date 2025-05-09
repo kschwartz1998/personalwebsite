@@ -5,16 +5,29 @@
 body{
     overflow-x: hidden;
 }
-.resumebackground{
-    height:700px;
-    width:1500px;
+
+.resumecontainer {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+
+}
+
+.resumebackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #3e4e8b;
-    left: 0px;
+    z-index: -1;
 }
 
 .downloadbutton{
     position:absolute;
-    left: 100px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom:130px;
     border-radius: 10px;
     border: 10px solid #6b1f0e;
@@ -24,12 +37,6 @@ body{
     font-weight: 600;
     cursor: pointer;
     background-color: #c28888;
-}
-@media screen and (max-width:600px) {
-    .downloadbutton {
-        left: 60px;
-        bottom:220px;
-    }
 }
 
 
