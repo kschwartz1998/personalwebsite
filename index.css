@@ -17,28 +17,6 @@ img {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
-  .traincar,
-  .traincar2,
-  .daryl,
-  .daryl2,
-  .railway,
-  .railway2,
-  .waymo,
-  .waymo2 {
-    height: 80px;
-    top: 65%;
-  }
-
-  .house-container,
-  .house2,
-  .myhouse,
-  .house4,
-  .house5,
-  .house7 {
-    width: 45vw;
-  }}
-
 
 
 
@@ -177,7 +155,7 @@ img {
 
 .house4 {
   position: absolute;
-  top: 45%;  /* Adjust this to move the house vertically */
+  top: 70% !important;  /* Adjust this to move the house vertically */
   left: -6%; /* Adjust this to move the house horizontally */
   width: 40vw;
   height: auto;
@@ -192,7 +170,7 @@ img {
   .house4 {
     width: 22vw;
     left:48.5%;
-    top: 41%;
+    top: 41% !important;
   }
 }
 
@@ -203,7 +181,7 @@ img {
 
 .house7 {
   position: absolute;
-  top: 45%;  /* Adjust this to move the house vertically */
+  top: 70% !important;  /* Adjust this to move the house vertically */
   left: 26%; /* Adjust this to move the house horizontally */
   width: 40vw;
   height: auto;
@@ -218,7 +196,7 @@ img {
   .house7 {
     width: 28vw;
     left:65.5%;
-    top: 27.5%;
+    top: 27.5% !important;
   }
 }
 
@@ -230,7 +208,7 @@ img {
 
 .house5 {
   position: absolute;
-  top: 48%;  /* Adjust this to move the house vertically */
+  top: 73% !important;  /* Adjust this to move the house vertically */
   left: 60%; /* Adjust this to move the house horizontally */
   width: 70vw;
   height: auto;
@@ -245,7 +223,7 @@ img {
   .house5 {
     width: 45vw;
     left:89.5%;
-    top: 40.5%;
+    top: 40.5% !important;
   }
 }
 
