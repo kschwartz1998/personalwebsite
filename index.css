@@ -305,7 +305,7 @@ header {
 
 .daryl {
   position: absolute;
-  top: 40% !important; /* Adjust for mobile */
+  top: 45% !important; /* Adjust for mobile */
   height: 100px;
   animation: drive-left 10s infinite ease-in-out;
   z-index: 1;
