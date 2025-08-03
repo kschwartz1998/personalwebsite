@@ -287,7 +287,7 @@ header {
 
 .traincar2 {
   position: absolute;
-  top: 72%; /* Adjust for mobile */
+  top: 72% !important; /* Adjust for mobile */
   height: 100px;
   animation: drive-right 9s infinite ease-in-out;
   z-index: 1;
@@ -328,7 +328,7 @@ header {
 
 .daryl2 {
   position: absolute;
-  top: 73%; /* Adjust for mobile */
+  top: 73% !important; /* Adjust for mobile */
   height: 100px;
   animation: drive-right 7s infinite ease-in-out;
   z-index: 1;
@@ -369,7 +369,7 @@ header {
 
 .railway2 {
   position: absolute;
-  top: 72%; /* Adjust for mobile */
+  top: 72% !important; /* Adjust for mobile */
   height: 150px;
   animation: drive-right 3.5s infinite ease-in-out;
   z-index: 1;
@@ -411,7 +411,7 @@ header {
 
 .waymo2 {
   position: absolute;
-  top: 72%; /* Adjust for mobile */
+  top: 72% !important; /* Adjust for mobile */
   height: 130px;
   animation: drive-right 4s infinite ease-in-out;
   z-index: 1;
