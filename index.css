@@ -1,0 +1,445 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e7d1bb;
+  color: #261f1d;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em 0em 3em;
+    z-index: 9999;
+    background-color: #e7d1bb;
+    border-bottom: 1px solid #261f1d;
+  }
+  
+  .site-title {
+    font-size: 5.2rem !important;
+    font-weight: 700 !important;
+    margin: 0;
+    letter-spacing: 0.25rem;
+    position: relative;
+    left: -2%;
+  }
+  
+  .main-nav {
+    margin-top: 0;
+    margin-right: 5%;
+    margin-bottom: -2rem;
+  }
+  
+  .main-nav a {
+    font-size: 1.5rem !important;
+    margin: 0 1em;
+  }
+}
+
+
+#sf-time {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  #sf-time {
+    position: fixed;
+    top: 4em;  /* adjust as needed */
+    right: 2em;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    z-index: 99999;
+    display: block;
+  }
+}
+
+
+
+
+
+
+.house-container {
+  position: absolute;
+  top: 13%;  /* Adjust this to move the house vertically */
+  left: -11%; /* Adjust this to move the house horizontally */
+  width: 50vw;
+  height: auto;
+}
+.house-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .house-container {
+    width: 30vw;
+    left:-3%;
+    top: 30%;
+  }
+}
+
+
+
+.house2 {
+  position: absolute;
+  top: 11.5%;  /* Adjust this to move the house vertically */
+  left: 72%; /* Adjust this to move the house horizontally */
+  width: 50vw;
+  height: auto;
+} 
+.house-color2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .house2 {
+    width: 30vw;
+    left:130.5%;
+    top: 27.5%;
+  }
+}
+
+
+
+
+.myhouse {
+  position: absolute;
+  top: 11.5%;  /* Adjust this to move the house vertically */
+  left: 30%; /* Adjust this to move the house horizontally */
+  width: 50vw;
+  height: auto;
+}
+.myhouse-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .myhouse {
+    width: 30vw;
+    left:21.5%;
+    top: 27%;
+  }
+}
+
+
+
+
+
+
+.house4 {
+  position: absolute;
+  top: 45%;  /* Adjust this to move the house vertically */
+  left: -6%; /* Adjust this to move the house horizontally */
+  width: 40vw;
+  height: auto;
+}
+.house4-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .house4 {
+    width: 22vw;
+    left:48.5%;
+    top: 41%;
+  }
+}
+
+
+
+
+
+
+.house7 {
+  position: absolute;
+  top: 45%;  /* Adjust this to move the house vertically */
+  left: 26%; /* Adjust this to move the house horizontally */
+  width: 40vw;
+  height: auto;
+}
+.house7-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .house7 {
+    width: 28vw;
+    left:65.5%;
+    top: 27.5%;
+  }
+}
+
+
+
+
+
+
+
+.house5 {
+  position: absolute;
+  top: 48%;  /* Adjust this to move the house vertically */
+  left: 60%; /* Adjust this to move the house horizontally */
+  width: 70vw;
+  height: auto;
+}
+.house5-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .house5 {
+    width: 45vw;
+    left:89.5%;
+    top: 40.5%;
+  }
+}
+
+
+
+header {
+  text-align: center;
+  padding-top: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.2rem;
+}
+
+.main-nav {
+  margin-top: 0.5em;
+}
+
+.main-nav a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin: 0 0.7em;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+
+
+
+
+
+.traincar {
+  position: absolute;
+  top: 33%; /* Adjust for mobile */
+  height: 100px;
+  animation: drive-left 12s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes drive-left {
+  from {
+    transform: translateX(120vw);
+  }
+  to {
+    transform: translateX(-200vw);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .traincar {
+  height: 200px;
+  top: 75%;
+  animation: drive-left 7s infinite ease-in-out;
+  }
+}
+
+
+.traincar2 {
+  position: absolute;
+  top: 62%; /* Adjust for mobile */
+  height: 100px;
+  animation: drive-right 9s infinite ease-in-out;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+@keyframes drive-right {
+  from {
+    transform: translateX(-200vw) scaleX(-1);
+  }
+  to {
+    transform: translateX(120vw) scaleX(-1);
+  }
+}
+
+.daryl {
+  position: absolute;
+  top: 33%; /* Adjust for mobile */
+  height: 100px;
+  animation: drive-left 10s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes drive-left {
+  from {
+    transform: translateX(120vw);
+  }
+  to {
+    transform: translateX(-200vw);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .daryl {
+  height: 200px;
+  top: 80%;
+  }
+}
+
+.daryl2 {
+  position: absolute;
+  top: 63%; /* Adjust for mobile */
+  height: 100px;
+  animation: drive-right 7s infinite ease-in-out;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+@keyframes drive-right {
+  from {
+    transform: translateX(-200vw) scaleX(-1);
+  }
+  to {
+    transform: translateX(120vw) scaleX(-1);
+  }
+}
+
+.railway {
+  position: absolute;
+  top: 30%; /* Adjust for mobile */
+  height: 150px;
+  animation: drive-left 9s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes drive-left {
+  from {
+    transform: translateX(120vw);
+  }
+  to {
+    transform: translateX(-200vw);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .railway {
+  height: 300px;
+  top: 71%;
+  }
+}
+
+.railway2 {
+  position: absolute;
+  top: 62%; /* Adjust for mobile */
+  height: 150px;
+  animation: drive-right 3.5s infinite ease-in-out;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+@keyframes drive-right {
+  from {
+    transform: translateX(-200vw) scaleX(-1);
+  }
+  to {
+    transform: translateX(120vw) scaleX(-1);
+  }
+}
+
+
+.waymo {
+  position: absolute;
+  top: 30%; /* Adjust for mobile */
+  height: 130px;
+  animation: drive-left 7.5s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes drive-left {
+  from {
+    transform: translateX(120vw);
+  }
+  to {
+    transform: translateX(-200vw);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .waymo {
+  height: 210px;
+  top: 73%;
+  }
+}
+
+.waymo2 {
+  position: absolute;
+  top: 62%; /* Adjust for mobile */
+  height: 130px;
+  animation: drive-right 4s infinite ease-in-out;
+  z-index: 1;
+  transform: scaleX(-1);
+}
+
+@keyframes drive-right {
+  from {
+    transform: translateX(-200vw) scaleX(-1);
+  }
+  to {
+    transform: translateX(120vw) scaleX(-1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .waymo2, 
+  .daryl2, 
+  .traincar2,
+  .railway2 {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  @keyframes drive-left {
+    from {
+      transform: translateX(160vw); /* Push start further right */
+    }
+    to {
+      transform: translateX(-200vw);
+    }
+  }
+
+  @keyframes drive-right {
+    from {
+      transform: translateX(-200vw) scaleX(-1);
+    }
+    to {
+      transform: translateX(180vw) scaleX(-1); /* Push start further left for reversed direction */
+    }
+  }
+}
