@@ -305,7 +305,7 @@ header {
 
 .daryl {
   position: absolute;
-  top: 38% !important; /* Adjust for mobile */
+  top: 40% !important; /* Adjust for mobile */
   height: 100px;
   animation: drive-left 10s infinite ease-in-out;
   z-index: 1;
@@ -328,7 +328,7 @@ header {
 
 .daryl2 {
   position: absolute;
-  top: 79% !important; /* Adjust for mobile */
+  top: 84% !important; /* Adjust for mobile */
   height: 100px;
   animation: drive-right 7s infinite ease-in-out;
   z-index: 1;
@@ -369,7 +369,7 @@ header {
 
 .railway2 {
   position: absolute;
-  top: 74% !important; /* Adjust for mobile */
+  top: 84% !important; /* Adjust for mobile */
   height: 150px;
   animation: drive-right 3.5s infinite ease-in-out;
   z-index: 1;
