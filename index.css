@@ -208,7 +208,7 @@ img {
 
 .house5 {
   position: absolute;
-  top: 62% !important;  /* Adjust this to move the house vertically */
+  top: 59% !important;  /* Adjust this to move the house vertically */
   left: 60%; /* Adjust this to move the house horizontally */
   width: 70vw;
   height: auto;
