@@ -11,6 +11,34 @@ html, body {
   overflow-x: hidden;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .traincar,
+  .traincar2,
+  .daryl,
+  .daryl2,
+  .railway,
+  .railway2,
+  .waymo,
+  .waymo2 {
+    height: 80px;
+    top: 65%;
+  }
+
+  .house-container,
+  .house2,
+  .myhouse,
+  .house4,
+  .house5,
+  .house7 {
+    width: 45vw;
+  }}
+
 
 
 
