@@ -346,7 +346,7 @@ header {
 
 .railway {
   position: absolute;
-  top: 35 !important; /* Adjust for mobile */
+  top: 45 !important; /* Adjust for mobile */
   height: 150px;
   animation: drive-left 9s infinite ease-in-out;
   z-index: 1;
