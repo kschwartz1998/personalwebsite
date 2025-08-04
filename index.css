@@ -279,7 +279,7 @@ header {
 @media screen and (min-width: 1024px) {
   .traincar {
   height: 200px;
-  top: 75%;
+  top: 72% !important;
   animation: drive-left 7s infinite ease-in-out;
   }
 }
@@ -322,7 +322,7 @@ header {
 @media screen and (min-width: 1024px) {
   .daryl {
   height: 200px;
-  top: 80%;
+  top: 80% !important;
   }
 }
 
@@ -363,7 +363,7 @@ header {
 @media screen and (min-width: 1024px) {
   .railway {
   height: 300px;
-  top: 71%;
+  top: 71% !important;
   }
 }
 
@@ -405,7 +405,7 @@ header {
 @media screen and (min-width: 1024px) {
   .waymo {
   height: 210px;
-  top: 73%;
+  top: 73% !important;
   }
 }
 
