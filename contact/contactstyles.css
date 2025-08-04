@@ -19,7 +19,7 @@ header {
   
   .site-title {
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 300 !important;
     margin: 0;
     letter-spacing: 0.2rem;
     text-decoration: none !important;
@@ -60,7 +60,7 @@ header {
     
     .site-title {
       font-size: 5.2rem !important;
-      font-weight: 700 !important;
+      font-weight: 300 !important;
       margin: 0;
       letter-spacing: 0.25rem;
       position: relative;
