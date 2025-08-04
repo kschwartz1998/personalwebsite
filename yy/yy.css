@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .poster-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .poster-section video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
