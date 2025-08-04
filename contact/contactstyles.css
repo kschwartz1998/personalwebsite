@@ -1,0 +1,257 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #261f1d;
+  background-color: #e7d1bb;
+}
+
+
+header {
+    text-align: center;
+    padding-top: 1em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .site-header {
+    border-bottom: 1px solid #261f1d;
+    padding: 2em 3em 1em 3em; /* 👈 this moves the border down */
+  }
+
+  
+  .site-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 0.2rem;
+    text-decoration: none !important;
+  }
+
+  .site-title a {
+    text-decoration: none !important;
+    color: #261f1d !important;
+  }
+  
+  .main-nav {
+    margin-top: 0.5em;
+  }
+  
+  .main-nav a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin: 0 0.7em;
+    text-decoration: none;
+    color: #261f1d;
+    font-weight: 500;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em 3em 0em 3em;
+      z-index: 9999;
+      background-color: #e7d1bb;
+      border-bottom: 1px solid #261f1d;
+    }
+    
+    .site-title {
+      font-size: 5.2rem !important;
+      font-weight: 700 !important;
+      margin: 0;
+      letter-spacing: 0.25rem;
+      position: relative;
+      left: -2%;
+      text-decoration: none;
+    }
+    
+    .main-nav {
+      margin-top: 0;
+      margin-right: 5%;
+      margin-bottom: -2rem;
+    }
+    
+    .main-nav a {
+      font-size: 1.5rem !important;
+      margin: 0 1em;
+    }
+  }
+
+
+
+  #sf-time {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    #sf-time {
+      position: fixed;
+      top: 4em;  /* adjust as needed */
+      right: 2em;
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      color: #555;
+      z-index: 99999;
+      display: block;
+    }
+  }
+
+
+
+
+  .contact-section {
+    background-color: #e7d1bb;;
+    padding: 4m 1.5em;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    min-height: 120vh;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .contact-section {
+    background-color: #e7d1bb;
+    padding-top: 8em;
+    }
+
+}
+
+  
+  .contact-section h2 {
+    color: #ba8081;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    text-align: center;         /* ← this is what you need */
+    width: 100%;
+  }
+  @media screen and (min-width: 1024px) {
+    .contact-section h2{
+        color:#914824;
+        text-align: left;
+        font-size: 3.3em;
+    }}
+
+    @media screen and (min-width: 1024px) {
+        .line-break {
+          display: none;
+        }
+      }
+
+  
+
+
+
+
+
+
+
+
+
+  .contact-form {
+    background-color: #537087;
+    padding: 2em;
+    border-radius: 20px;
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+  }
+  
+  .contact-form label {
+    font-weight: 500;
+    color: #261f1d;
+    margin-bottom: 0.3em;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: none;
+    border-radius: 2em;
+    padding: 0.8em 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #e7d1bb;
+    color: #261f1d;
+  }
+  
+  .contact-form textarea {
+    border-radius: 1.2em;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #ba8081;
+    color: #e7d1bb;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 2em;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #8c4862;
+  }
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .contact-form{
+        max-width: 555px;
+        gap: 0.3em;
+        position: absolute;
+        left: 0%;
+        top: 100%;
+    }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .payphone {
+    display: none;
+  }
+
+  .contact-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ✅ this is what centers the form */
+    gap: 2em;
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    .payphone {
+      position: absolute;
+     width:50%;
+     display: block;
+     left: 57%;
+     top: 80%;
+    }
+  }
