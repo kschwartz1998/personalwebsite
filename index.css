@@ -2,6 +2,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #e7d1bb;
   color: #261f1d;
+
 }
 
 html, body {
@@ -17,7 +18,9 @@ img {
   display: block;
 }
 
-
+.site-title {
+  font-weight: 300 !important;
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -37,7 +40,7 @@ img {
   
   .site-title {
     font-size: 5.2rem !important;
-    font-weight: 700 !important;
+    font-weight: 300 !important;
     margin: 0;
     letter-spacing: 0.25rem;
     position: relative;
