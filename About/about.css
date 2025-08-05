@@ -275,3 +275,30 @@ body {
         line-height: 1.7;
       }
   }
+
+
+  .cr-container {
+    text-align: center;
+    position: absolute;
+    left: 0%;
+    bottom: -115%;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .cr {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color:#3d181e;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .cr-container {
+      text-align: center;
+      position: absolute;
+      left: 0%;
+      bottom: -50%;
+      width: 100%;
+    }
+  }
