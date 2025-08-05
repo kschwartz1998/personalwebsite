@@ -133,7 +133,8 @@ body {
     .work-item.laundry video,
     .work-item.ladder img, 
     .work-item.yy video,
-    .work-item.ms video  {
+    .work-item.ms video,
+    .work-item.cdv video  {
       max-width: 100vw; /* or 1200px, or whatever large size you want */
       width: 1000px;
     }
