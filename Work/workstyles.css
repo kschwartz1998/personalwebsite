@@ -185,3 +185,16 @@ body {
       width: 100%;
     }
   }
+
+
+  @media screen and (min-width: 1024px) {
+    .work-item img,
+    .work-item video {
+      transition: transform 0.3s ease; /* smooth zoom */
+    }
+  
+    .work-item:hover img,
+    .work-item:hover video {
+      transform: scale(1.05); /* slight enlarge */
+    }
+  }
