@@ -302,3 +302,16 @@ body {
       width: 100%;
     }
   }
+
+
+  #about-blurb a {
+    color: #e7d1bb;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  #about-blurb a:hover {
+    color: #ffffff;
+  }
+
+
