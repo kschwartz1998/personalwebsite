@@ -218,4 +218,74 @@ body {
 
 
 
+  .cr-container {
+    text-align: center;
+    position: absolute;
+    left: 0%;
+    bottom: 15%;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .cr {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color:#3d181e;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .cr-container {
+      text-align: center;
+      position: absolute;
+      left: 0%;
+      bottom: -20%;
+      width: 100%;
+    }
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    .work-item img,
+    .work-item video {
+      transition: transform 0.3s ease; /* smooth zoom */
+    }
+  
+    .work-item:hover img,
+    .work-item:hover video {
+      transform: scale(1.05); /* slight enlarge */
+    }
+  }
+
+
+
+
+
+ .social-icons-time {           /* header pair */
+  display: none;               /* hide on mobile */
+}
+
+.social-icons-footer {         /* footer pair */
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+  margin-left: 0px;
+}
+
+.social-icons-footer .social-icon { width: 24px; height: auto; }
+
+/* DESKTOP (≥1024px) — flip it */
+@media screen and (min-width:1024px){
+  .social-icons-time {
+    display: flex;             /* show header pair */
+    position: fixed; top: 1.5em; right: 2em; gap: .5rem; z-index: 99999;
+  }
+  .social-icons-time .social-icon { width: 25px; height: auto; }
+
+  .social-icons-footer { display: none; }  /* hide footer pair */
+}
+
+
+
+
 
