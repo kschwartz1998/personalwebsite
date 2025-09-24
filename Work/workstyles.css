@@ -164,7 +164,7 @@ body {
     text-align: center;
     position: absolute;
     left: 0%;
-    bottom: -300%;
+    bottom: -230%;
     width: 100%;
     z-index: 100;
   }
@@ -181,7 +181,7 @@ body {
       text-align: center;
       position: absolute;
       left: 0%;
-      bottom: -600%;
+      bottom: -680%;
       width: 100%;
     }
   }
@@ -198,3 +198,31 @@ body {
       transform: scale(1.05); /* slight enlarge */
     }
   }
+
+
+
+
+
+ .social-icons-time {           /* header pair */
+  display: none;               /* hide on mobile */
+}
+
+.social-icons-footer {         /* footer pair */
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+  margin-left: 0px;
+}
+
+.social-icons-footer .social-icon { width: 24px; height: auto; }
+
+/* DESKTOP (≥1024px) — flip it */
+@media screen and (min-width:1024px){
+  .social-icons-time {
+    display: flex;             /* show header pair */
+    position: fixed; top: 1.5em; right: 2em; gap: .5rem; z-index: 99999;
+  }
+  .social-icons-time .social-icon { width: 25px; height: auto; }
+
+  .social-icons-footer { display: none; }  /* hide footer pair */
+}
