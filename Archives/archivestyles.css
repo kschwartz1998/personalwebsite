@@ -4,6 +4,10 @@ body {
     color: #261f1d;
   }
 
+  .archive {
+    min-height: 130dvh;      /* guarantees at least one screen of content height */
+  }
+
   header {
     text-align: center;
     padding-top: 1em;
@@ -222,7 +226,7 @@ body {
     text-align: center;
     position: absolute;
     left: 0%;
-    bottom: 15%;
+    bottom: 0%;
     width: 100%;
     z-index: 100;
   }
