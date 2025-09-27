@@ -226,3 +226,22 @@ body {
 
   .social-icons-footer { display: none; }  /* hide footer pair */
 }
+
+
+
+.mobile-note {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: .9rem;
+  font-weight: 400;
+  margin: 1em;
+  color: #261f1d;
+  font-style: italic;
+}
+
+/* Hide on desktop */
+@media screen and (min-width: 1024px) {
+  .mobile-note {
+    display: none;
+  }
+}
