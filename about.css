@@ -1,0 +1,385 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e7d1bb;
+
+  }
+
+
+
+  
+
+  header {
+    text-align: center;
+    padding-top: 1em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .site-header {
+    border-bottom: 1px solid #261f1d;
+    padding: 2em 3em 1em 3em; /* 👈 this moves the border down */
+  }
+  
+  .site-title {
+    font-size: 1.8rem;
+    font-weight: 300 !important;
+    margin: 0;
+    letter-spacing: 0.2rem;
+    text-decoration: none !important;
+  }
+  
+  .main-nav {
+    margin-top: 0.5em;
+  }
+  
+  .main-nav a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin: 0 0.7em;
+    text-decoration: none;
+    color: #261f1d;
+    font-weight: 500;
+  }
+
+  .site-title a {
+    text-decoration: none !important;
+    color: #261f1d !important;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em 3em 0em 3em;
+      z-index: 9999;
+      background-color: #e7d1bb;
+      border-bottom: 1px solid #261f1d ;
+    }
+    
+    .site-title {
+      font-size: 5.2rem !important;
+      font-weight: 300 !important;
+      margin: 0;
+      letter-spacing: 0.25rem;
+      position: relative;
+      left: -2%;
+    }
+    
+    .main-nav {
+      margin-top: 0;
+      margin-right: 5%;
+      margin-bottom: -2rem;
+    }
+    
+    .main-nav a {
+      font-size: 1.5rem !important;
+      margin: 0 1em;
+    }
+  }
+
+
+
+  #sf-time {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    #sf-time {
+      position: fixed;
+      top: 4em;  /* adjust as needed */
+      right: 2em;
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      color: #555;
+      z-index: 99999;
+      display: block;
+    }
+  }
+
+
+
+  #about-animation {
+    margin-top: 0em;
+    padding: 4em 1em 4em 1em; /* ↑ more bottom padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e7d1bb;
+  }
+
+  @media screen and (min-width: 1024px) {
+    #about-animation {
+      display: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      height: 0 !important;
+        display: none !important;
+}}
+
+  
+  #word-block {
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+  }
+  
+  #im-prefix {
+    color:#261f1d;
+    display: block;
+    margin-bottom: 0.3em;
+    font-weight: 800;
+  }
+  
+  .word {
+    display: none;
+    position: absolute;
+    top: 2.3em;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 800;
+  }
+  .word.active {
+    display: block;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    #word-block {
+      font-size: 5.2rem;
+      margin-top: -2.5em;
+    }
+  
+    .word {
+      top: 1em;
+      font-size: 8rem;
+    }
+  }
+
+  .imaginative {
+    color: #8c4862;
+  }
+  
+  .collaborative {
+    color: #914824;
+  }
+  
+  .strategic {
+    color: #537087;
+  }
+  
+  .adaptable {
+    color: #ba8081;
+  }
+  
+  .story {
+    color: #727da3;
+  }
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  #kat-photo {
+    margin-top: 0em;
+    text-align: left;
+    overflow: hidden;  /* ✅ This prevents layout overflow */
+    position: relative;
+    z-index: 1;
+  }
+  
+  #kat-photo img {
+    width: 110%;
+    max-width: none;
+    height: auto;
+    border-radius: 10px;
+  
+    display: block;
+    margin-left: -5%;
+    position: relative;
+    z-index: 1;
+  }
+
+
+
+  #about-blurb {
+    background-color: #537087;
+    color: #e7d1bb;
+    padding: 4em 1.5em 1em;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    position: relative;   /* ✅ Makes sure it stacks properly */
+    z-index: 2;
+    min-height: 900px;
+  }
+  @media screen and (min-width: 1024px) {
+    #about-blurb {
+      font-size: 1.3rem;
+      padding: 6em 5em;
+      margin-top: 2em;
+      min-height: 700px;
+    }
+  }
+
+
+
+
+  @media screen and (min-width: 1024px) {
+    #about-body {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4em;
+        padding: 0em 5em 0em 0em;
+        background-color: #537087;
+        margin-top: 8em;
+        width: 100vw;
+      }
+      
+      #kat-photo {
+        width: 70%;
+        margin: 0em;
+        margin-left: -1em;
+      }
+      
+      #kat-photo img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        border-radius: 10px;
+    
+      }
+      
+      #about-blurb {
+        width: 60%;
+        padding: 0;
+        text-align: left;
+        color: #e7d1bb;
+        font-size: 1.3rem;
+        line-height: 1.7;
+      }
+  }
+
+
+  .cr-container {
+    text-align: center;
+    position: absolute;
+    left: 0%;
+    bottom: -403%;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .cr {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color:#3d181e;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .cr-container {
+      text-align: center;
+      position: absolute;
+      left: 0%;
+      bottom: -150%;
+      width: 100%;
+    }
+  }
+
+
+  #about-blurb a {
+    color: #e7d1bb;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  #about-blurb a:hover {
+    color: #ffffff;
+  }
+
+
+
+
+ .social-icons-time {           /* header pair */
+  display: none;               /* hide on mobile */
+}
+
+.social-icons-footer {         /* footer pair */
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+  margin-left: 0px;
+}
+
+.social-icons-footer .social-icon { width: 24px; height: auto; }
+
+/* DESKTOP (≥1024px) — flip it */
+@media screen and (min-width:1024px){
+  .social-icons-time {
+    display: flex;             /* show header pair */
+    position: fixed; top: 1.5em; right: 2em; gap: .5rem; z-index: 99999;
+  }
+  .social-icons-time .social-icon { width: 25px; height: auto; }
+
+  .social-icons-footer { display: none; }  /* hide footer pair */
+}
+
+
+
+
+
+
+
+
+
+#process-videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #537087;   /* matches your about section */
+  padding:1em 0 25em 0;
+  gap: 2em;
+}
+
+#process-videos iframe {
+  width: 315px;
+  height: 560px;
+  border-radius: 10px;
+  border: 3px solid #e7d1bb;   /* soft contrast border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Desktop adjustments */
+@media screen and (min-width: 1024px) {
+  #process-videos {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+    padding: 6em 0;
+  }
+
+  #process-videos iframe {
+    width: 360px;
+    height: 640px;
+  }
+}
