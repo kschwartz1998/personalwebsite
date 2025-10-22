@@ -359,7 +359,6 @@ body {
   background-color: #537087;   /* matches your about section */
   padding:1em 0 25em 0;
   gap: 2em;
-  width: 100vw;
 }
 
 #process-videos iframe {
