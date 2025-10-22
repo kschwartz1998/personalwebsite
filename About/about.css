@@ -7,12 +7,12 @@ body {
   }
 
   html, body {
-    margin: 0;        /* ✅ kill the default 8px margin */
-    padding: 0;
-    /* optional: */
-    overflow-x: hidden;  /* avoids any accidental horizontal scrollbars */
-  }
-  
+  margin: 0;        /* ✅ kill the default 8px margin */
+  padding: 0;
+  /* optional: */
+  overflow-x: hidden;  /* avoids any accidental horizontal scrollbars */
+}
+
 
   
 
