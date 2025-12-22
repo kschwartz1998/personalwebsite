@@ -1,7 +1,7 @@
 function updateSFTime() {
   const now = new Date();
   const options = {
-    timeZone: 'America/Los_Angeles',
+    timeZone: 'America/New_York',
     hour: 'numeric',
     minute: '2-digit',
     hour12: true
@@ -11,7 +11,7 @@ function updateSFTime() {
     const timeString = new Intl.DateTimeFormat('en-US', options).format(now);
     const sfTimeElement = document.getElementById('sf-time');
     if (sfTimeElement) {
-      sfTimeElement.textContent = `San Francisco, CA ${timeString}`;
+      sfTimeElement.textContent = `New York, NY ${timeString}`;
     }
   } catch (e) {
     console.error("Time formatting failed:", e);
